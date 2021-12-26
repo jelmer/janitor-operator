@@ -1,0 +1,20 @@
+# permissions for end users to view janitors.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: janitor-viewer-role
+rules:
+- apiGroups:
+  - janitor.jelmer.uk
+  resources:
+  - janitors
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - janitor.jelmer.uk
+  resources:
+  - janitors/status
+  verbs:
+  - get

@@ -1,0 +1,6 @@
+apiVersion: janitor.jelmer.uk/v1alpha1
+kind: Janitor
+metadata:
+  name: janitor-sample
+spec:
+  # TODO(user): Add fields here
